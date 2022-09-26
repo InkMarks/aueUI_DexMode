@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aueUI_DexMode.iml" filepath="$PROJECT_DIR$/.idea/modules/aueUI_DexMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/aueUI_DexMode.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

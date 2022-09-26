@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wallpaperBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <!--<RelativeLayout
+        android:id="@+id/bannerAdRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/bannerAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/deleteAd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_oval_delete_bg"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>-->
+
+    <!--桌面图标布局-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startMenu" />
+
+    <!--自带功能窗口-->
+       <FrameLayout
+           android:id="@+id/fragmentListLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/startMenu"
+           android:layout_alignParentTop="true">
+
+           <FrameLayout
+               android:id="@+id/fragment1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/fragment2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/fragment3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/fragment4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/fragment5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/fragment6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment7"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment8"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment9"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment11"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <FrameLayout
+               android:id="@+id/fragment12"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment13"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment14"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment15"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment16"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment17"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment18"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment19"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment20"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment21"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment22"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment23"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment24"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment25"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment26"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment27"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment28"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment29"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment30"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment31"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment32"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment33"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment34"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment35"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment36"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment37"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <FrameLayout
+               android:id="@+id/fragment38"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </FrameLayout>
+
+    <!--桌面任务栏-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/start_menu_item_bg"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:id="@+id/startMenu"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="5dp"
+               android:onClick="openStartMenu"
+               android:src="@drawable/logo" />
+
+           <com.aueui.dexmode.widget.HorizontalListView
+               android:id="@+id/horizontalListView"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_alignTop="@+id/startMenu"
+               android:layout_marginEnd="360dp"
+               android:layout_gravity="center" />
+
+
+           <LinearLayout
+               android:id="@+id/statusbar"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="-360dp"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:id="@+id/battery"
+                   android:layout_width="24dp"
+                   android:layout_height="40dp"
+                   android:layout_toLeftOf="@+id/wifi"
+                   android:onClick="openBattery"
+                   android:paddingLeft="2dp"
+                   android:paddingTop="4dp"
+                   android:paddingRight="2dp"
+                   android:src="@mipmap/battery_0" />
+
+               <ImageView
+                   android:id="@+id/wifi"
+                   android:layout_width="24dp"
+                   android:layout_height="40dp"
+                   android:layout_toLeftOf="@+id/signal"
+                   android:onClick="openWifi"
+                   android:padding="4dp"
+                   android:src="@mipmap/wifi_1" />
+
+               <ImageView
+                   android:id="@+id/signal"
+                   android:layout_width="24dp"
+                   android:layout_height="40dp"
+                   android:layout_toLeftOf="@+id/clock"
+                   android:onClick="openSignal"
+                   android:padding="4dp"
+                   android:src="@mipmap/signal_1"
+                   android:visibility="gone" />
+
+               <TextView
+                   android:id="@+id/clock"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"
+                   android:gravity="center"
+                   android:lineSpacingExtra="2dp"
+                   android:onClick="openClock"
+                   android:paddingLeft="5dp"
+                   android:paddingRight="5dp"
+                   android:text="14:40  9/8 星期五"
+                   android:textColor="@android:color/black"
+                   android:textSize="10sp" />
+
+
+               <ImageView
+                   android:id="@+id/notice"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:onClick="openOperationCenter"
+                   android:padding="10dp"
+                   android:src="@mipmap/notice" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/navigation"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:id="@+id/back"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginEnd="10dp"
+                   android:src="@mipmap/back" />
+
+               <ImageView
+                   android:id="@+id/home"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginEnd="10dp"
+                   android:src="@mipmap/home" />
+
+               <ImageView
+                   android:id="@+id/background"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@mipmap/background" />
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </RelativeLayout>
