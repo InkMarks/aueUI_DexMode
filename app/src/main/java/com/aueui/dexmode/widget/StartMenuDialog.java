@@ -1,11 +1,12 @@
 package com.aueui.dexmode.widget;
 
+import static com.aueui.dexmode.activity.MainActivity.MAIN_BROADCAST;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Build;
 import android.provider.Settings;
 import android.view.Gravity;
@@ -13,9 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.DecelerateInterpolator;
-import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
@@ -33,8 +31,6 @@ import com.aueui.dexmode.utils.SavePreference;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.aueui.dexmode.activity.MainActivity.MAIN_BROADCAST;
-
 /**
  * Created by xlzhen on 9/10 0010.
  * 开始菜单
@@ -42,22 +38,27 @@ import static com.aueui.dexmode.activity.MainActivity.MAIN_BROADCAST;
 
 public class StartMenuDialog extends Dialog implements View.OnClickListener {
     private Context context;
-    private AppListAdapter appListAdapter;
     public AppListAdapter.OnAddToDesktopListener onAddToDesktopListener;
+    private AppListAdapter appListAdapter;
+
     public static boolean isFullScreen;
 
     public StartMenuDialog(Context context, AppListAdapter.OnAddToDesktopListener onAddToDesktopListener) {
         super(context, R.style.dialogsss);
         if (getWindow() != null)
+
+
             getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.dialog_start_menu);
         this.context = context;
+
         this.onAddToDesktopListener = onAddToDesktopListener;
         changeOrientation(context.getResources().getConfiguration().orientation);
-        findViewById(R.id.menu_switch).setOnClickListener(this);
+        /*findViewById(R.id.menu_switch).setOnClickListener(this);*/
         findViewById(R.id.user_switch).setOnClickListener(this);
         findViewById(R.id.setting_switch).setOnClickListener(this);
+
         findViewById(R.id.power_switch).setOnClickListener(this);
         findViewById(R.id.explorer_switch).setOnClickListener(this);
         ((TextView) findViewById(R.id.phoneName)).setText(Build.MODEL);
@@ -77,7 +78,7 @@ public class StartMenuDialog extends Dialog implements View.OnClickListener {
         WindowManager.LayoutParams lp = dialogWindow.getAttributes();
         dialogWindow.setGravity(Gravity.START | Gravity.BOTTOM);
         dialogWindow.setWindowAnimations(R.style.StartMenuDialogAnimation);
-        lp.y = DensityUtils.dp2px(55); // 新位置Y坐标
+        lp.y = DensityUtils.dp2px(60); // 新位置Y坐标
         dialogWindow.getDecorView().setPadding(0, 0, 0, 0);
         dialogWindow.setAttributes(lp);
 
@@ -189,7 +190,7 @@ public class StartMenuDialog extends Dialog implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.menu_switch://展开所有按钮
+            /*case R.id.menu_switch://展开所有按钮
 
                 Animation animation = new TranslateAnimation(0, 30, 0, 0);
                 animation.setDuration(100);
@@ -207,7 +208,7 @@ public class StartMenuDialog extends Dialog implements View.OnClickListener {
                 findViewById(R.id.menu_layout).setLayoutParams(new RelativeLayout.LayoutParams(DensityUtils.dp2px(isOpenStartMenu ? 50 : 200)
                         , ViewGroup.LayoutParams.MATCH_PARENT));
                 view.setTag(!isOpenStartMenu);
-                break;
+                break;*/
             case R.id.user_switch://用户账户
                 if (userMenuDialog == null) {
                     userMenuDialog = new MenuSelectDialog((Activity) context, (int) view.getX(), DensityUtils.dp2px(210));

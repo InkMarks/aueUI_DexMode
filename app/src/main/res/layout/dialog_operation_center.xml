@@ -4,8 +4,8 @@
     android:layout_width="340dp"
     android:layout_height="match_parent"
     android:background="@drawable/dialog_bg"
-    android:layout_marginEnd="30dp"
     android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/noticeTitle"
@@ -33,6 +33,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/operation_center_button"
         android:layout_below="@+id/noticeEgg"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="-32dp"
         android:divider="@null"
         android:dividerHeight="0dp"
         android:padding="5dp" />
@@ -148,5 +150,7 @@
             app:operationAction="android.settings.AIRPLANE_MODE_SETTINGS"
             app:operationImage="@mipmap/flight_mode"
             app:operationText="飞行模式" />
+
     </RelativeLayout>
+
 </RelativeLayout>
