@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content">
+    <!--桌面图标定制！-->
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="DEX模式"
+        android:textSize="10sp"
+        android:textColor="#ffffff" />
+
+
+
+
+</RelativeLayout>

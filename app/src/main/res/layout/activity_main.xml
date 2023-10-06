@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--桌面主布局！-->
+
+    <ImageView
+        android:id="@+id/wallpaperBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
+
+
+    <!--桌面图标布局-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/startMenu"
+        tools:ignore="NotSibling" >
+
+
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/fragmentListLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/startMenu"
+        android:layout_alignParentTop="true"
+        tools:ignore="NotSibling">
+
+        <FrameLayout
+            android:id="@+id/fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <!--桌面任务栏-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/start_menu_item_bg"
+           android:orientation="horizontal">
+
+
+           <ImageView
+               android:id="@+id/startMenu"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="5dp"
+               android:onClick="openStartMenu"
+               android:gravity="center"
+               android:src="@drawable/logo" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_marginLeft="10dp"
+               android:layout_gravity="center"
+               android:src="@drawable/separator"/>
+
+           <com.aueui.dexmode.widget.HorizontalListView
+               android:id="@+id/horizontalListView"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:layout_alignTop="@+id/startMenu"
+               android:layout_marginLeft="10dp"
+               android:layout_gravity="center" />
+
+
+           <LinearLayout
+               android:id="@+id/notice"
+               android:layout_width="130dp"
+               android:layout_height="35dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="-330dp"
+               android:onClick="openOperationCenter"
+               android:background="@drawable/statusbar_background"
+               android:orientation="horizontal">
+
+
+
+               <ImageView
+                   android:id="@+id/signal"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_toLeftOf="@+id/wifi"
+                   android:onClick="openSignal"
+                   android:padding="4dp"
+                   android:layout_gravity="center"
+                   android:src="@mipmap/signal_5"
+                   android:layout_marginLeft="10dp" />
+
+
+
+               <ImageView
+                   android:id="@+id/wifi"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_toLeftOf="@+id/battery"
+                   android:layout_marginLeft="5dp"
+                   android:layout_gravity="center"
+                   android:onClick="openWifi"
+                   android:src="@mipmap/wifi_4" />
+
+               <ImageView
+                   android:id="@+id/battery"
+                   android:layout_width="24dp"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/signal"
+                   android:layout_gravity="center"
+                   android:onClick="openBattery"
+                   android:paddingLeft="2dp"
+                   android:paddingTop="2dp"
+                   android:paddingRight="2dp"
+                   android:layout_marginLeft="5dp"
+                   android:src="@mipmap/battery_100" />
+
+
+
+               <TextView
+                   android:id="@+id/clock"
+                   android:layout_gravity="center"
+                   android:layout_width="45dp"
+                   android:layout_height="wrap_content"
+                   android:onClick="openClock"
+                   android:text="下午14:40"
+                   android:textColor="@android:color/black"
+                   android:gravity="center"
+                   android:textSize="8sp" />
+
+
+               <!--<ImageView
+                   android:id="@+id/notice"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:onClick="openOperationCenter"
+                   android:padding="10dp"
+                   android:src="@mipmap/notice" />-->
+
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_marginLeft="10dp"
+               android:layout_gravity="center"
+               android:src="@drawable/separator"/>
+
+           <LinearLayout
+               android:id="@+id/navigation"
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:id="@+id/background"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_marginEnd="20dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/background" />
+
+               <ImageView
+                   android:id="@+id/home"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_marginEnd="20dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/home" />
+
+               <ImageView
+                   android:id="@+id/back"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/back" />
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </RelativeLayout>
